@@ -1,0 +1,3125 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Complete, typed Python client for the WhatsApp Business Platform (Cloud API)">
+      
+      
+      
+      
+        <link rel="prev" href="../api/infra/">
+      
+      
+        <link rel="next" href="../plan/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Endpoint Catalog - wapi — WhatsApp Business Platform for Python</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#whatsapp-business-platform-complete-api-reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="wapi — WhatsApp Business Platform for Python" class="md-header__button md-logo" aria-label="wapi — WhatsApp Business Platform for Python" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            wapi — WhatsApp Business Platform for Python
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Endpoint Catalog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/wapi-py/wapi" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../quickstart/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../guides/messages/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../api/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  API Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Endpoint Catalog
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../plan/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Design Plan
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="wapi — WhatsApp Business Platform for Python" class="md-nav__button md-logo" aria-label="wapi — WhatsApp Business Platform for Python" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    wapi — WhatsApp Business Platform for Python
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/wapi-py/wapi" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation & Quickstart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/messages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sending Messages
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/account/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phone Numbers & Profile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/extended/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calls, Groups & Flows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/webhooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Webhooks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errors & Retries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/async/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Async Client
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../api/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    API Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/client/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Client
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/builders/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Builders
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/webhooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Webhooks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/infra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exceptions & HTTP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Endpoint Catalog
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Endpoint Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Fundamentals
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Fundamentals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Required permissions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core IDs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-messages-whatsapp-business-phone-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Messages — whatsapp-business-phone-number
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Messages — whatsapp-business-phone-number">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-phone-number-idmessages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        POST /{Phone-Number-ID}/messages
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="POST /{Phone-Number-ID}/messages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-types-type-field" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Message types (type field)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactive-message-action-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interactive message action options
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read-receipts-typing-indicator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Read receipts &amp; typing indicator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#media-upload-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Media upload constraints
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-phone-number-idmarketing_messages-marketing-messages-mm-lite-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        POST /{Phone-Number-ID}/marketing_messages — Marketing Messages (MM Lite) API
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-media" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Media
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Media">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resumable-upload-api-graph-api-file-upload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumable Upload API (Graph API file upload)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-message-templates-whatsapp-business-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Message Templates — whatsapp-business-account
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-phone-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Phone Numbers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-business-profile-commerce-automation-qr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Business Profile, Commerce, Automation, QR
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-calling-api-voip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Calling API (VoIP)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Groups
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-flows-api-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Flows API (management)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-whatsapp-business-account-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. WhatsApp Business Account node
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-business-portfolio-partner-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Business portfolio &amp; partner endpoints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-webhooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Webhooks
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. Webhooks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#webhook-field-values-change-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Webhook field values (change types)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#messages-value-payloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        messages value payloads
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-supporting-apis-mechanics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Supporting APIs &amp; mechanics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-endpoint-coverage-summary-build-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Endpoint coverage summary (build checklist)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design Plan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Fundamentals
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Fundamentals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Required permissions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core IDs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-messages-whatsapp-business-phone-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Messages — whatsapp-business-phone-number
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Messages — whatsapp-business-phone-number">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-phone-number-idmessages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        POST /{Phone-Number-ID}/messages
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="POST /{Phone-Number-ID}/messages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-types-type-field" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Message types (type field)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactive-message-action-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interactive message action options
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read-receipts-typing-indicator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Read receipts &amp; typing indicator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#media-upload-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Media upload constraints
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-phone-number-idmarketing_messages-marketing-messages-mm-lite-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        POST /{Phone-Number-ID}/marketing_messages — Marketing Messages (MM Lite) API
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-media" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Media
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Media">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resumable-upload-api-graph-api-file-upload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumable Upload API (Graph API file upload)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-message-templates-whatsapp-business-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Message Templates — whatsapp-business-account
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-phone-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Phone Numbers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-business-profile-commerce-automation-qr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Business Profile, Commerce, Automation, QR
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-calling-api-voip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Calling API (VoIP)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Groups
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-flows-api-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Flows API (management)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-whatsapp-business-account-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. WhatsApp Business Account node
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-business-portfolio-partner-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Business portfolio &amp; partner endpoints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-webhooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Webhooks
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. Webhooks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#webhook-field-values-change-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Webhook field values (change types)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#messages-value-payloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        messages value payloads
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-supporting-apis-mechanics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Supporting APIs &amp; mechanics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-endpoint-coverage-summary-build-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Endpoint coverage summary (build checklist)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+    
+      
+    
+    <a href="https://github.com/wapi-py/wapi/raw/master/docs/api-reference.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="whatsapp-business-platform-complete-api-reference">WhatsApp Business Platform — Complete API Reference<a class="headerlink" href="#whatsapp-business-platform-complete-api-reference" title="Permanent link">&para;</a></h1>
+<p>Catalog of every endpoint, method, and option exposed by the WhatsApp Business
+Platform (Cloud API + Business Management API + Flows API), verified against
+Meta's official API reference (November 2026, Graph API v21+).</p>
+<p>This document is the build spec for the <code>wapi</code> package: every resource class in
+the plan maps to a section here.</p>
+<hr />
+<h2 id="1-fundamentals">1. Fundamentals<a class="headerlink" href="#1-fundamentals" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base URL</td>
+<td><code>https://graph.facebook.com/{VERSION}</code></td>
+</tr>
+<tr>
+<td>Current versions</td>
+<td><code>v21.0</code> – <code>v25.0</code> (version is part of the path, configurable in the client)</td>
+</tr>
+<tr>
+<td>Auth</td>
+<td><code>Authorization: Bearer &lt;ACCESS_TOKEN&gt;</code> (system-user or user token)</td>
+</tr>
+<tr>
+<td>Content types</td>
+<td><code>application/json</code> (most calls), <code>multipart/form-data</code> (media/asset uploads)</td>
+</tr>
+<tr>
+<td>Pagination</td>
+<td>Cursor-based: <code>limit</code>, <code>after</code>, <code>before</code>; response <code>paging.cursors</code> / <code>paging.next</code></td>
+</tr>
+<tr>
+<td>Field selection</td>
+<td><code>?fields=a,b,c</code> on almost every GET</td>
+</tr>
+</tbody>
+</table>
+<h3 id="required-permissions">Required permissions<a class="headerlink" href="#required-permissions" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Scope</th>
+<th>Needed for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>whatsapp_business_messaging</code></td>
+<td>Sending messages, media upload/download, calls, groups, marketing messages</td>
+</tr>
+<tr>
+<td><code>whatsapp_business_management</code></td>
+<td>Templates, phone numbers, registration, profiles, QR codes, flows, webhooks, WABA admin</td>
+</tr>
+<tr>
+<td><code>business_management</code></td>
+<td>Business portfolio / partner-level endpoints</td>
+</tr>
+<tr>
+<td><code>catalog_management</code></td>
+<td>Product/catalog messages (plus commerce settings)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="core-ids">Core IDs<a class="headerlink" href="#core-ids" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Used in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>{Phone-Number-ID}</code></td>
+<td>Send messages, media, calls, groups, profile, registration, settings</td>
+</tr>
+<tr>
+<td><code>{WABA-ID}</code></td>
+<td>Templates, phone number management, subscribed apps, flows, analytics</td>
+</tr>
+<tr>
+<td><code>{Business-ID}</code></td>
+<td>Portfolio-level endpoints (owned/client WABAs, phone numbers, credits)</td>
+</tr>
+<tr>
+<td><code>{Application-ID}</code></td>
+<td>App-level partner endpoints</td>
+</tr>
+<tr>
+<td><code>{Media-ID}</code> / <code>{Media-URL}</code></td>
+<td>Media retrieval/download/deletion</td>
+</tr>
+<tr>
+<td><code>{FLOW-ID}</code></td>
+<td>Flows management</td>
+</tr>
+<tr>
+<td><code>{TEMPLATE_ID}</code></td>
+<td>Single-template get/edit</td>
+</tr>
+<tr>
+<td><code>{group_id}</code></td>
+<td>Group node operations</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-messages-whatsapp-business-phone-number">2. Messages — <code>whatsapp-business-phone-number</code><a class="headerlink" href="#2-messages-whatsapp-business-phone-number" title="Permanent link">&para;</a></h2>
+<p>The central endpoint. One <code>POST</code> handles every outbound message type, plus
+read receipts and typing indicators.</p>
+<h3 id="post-phone-number-idmessages"><code>POST /{Phone-Number-ID}/messages</code><a class="headerlink" href="#post-phone-number-idmessages" title="Permanent link">&para;</a></h3>
+<p>Base fields (all message types):</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Required</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>messaging_product</code></td>
+<td><code>"whatsapp"</code></td>
+<td>✓</td>
+<td>Always</td>
+</tr>
+<tr>
+<td><code>recipient_type</code></td>
+<td><code>"individual"</code> | <code>"group"</code></td>
+<td>✓</td>
+<td><code>group</code> for group chats</td>
+</tr>
+<tr>
+<td><code>to</code></td>
+<td>string</td>
+<td>✓</td>
+<td>E.164 phone number, WhatsApp user ID, or group ID</td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td>string</td>
+<td>✓</td>
+<td>See message types below</td>
+</tr>
+<tr>
+<td><code>context</code></td>
+<td>object</td>
+<td></td>
+<td><code>{ "message_id": "&lt;wamid&gt;" }</code> — quote/reply</td>
+</tr>
+<tr>
+<td><code>biz_opaque_callback_data</code></td>
+<td>string</td>
+<td></td>
+<td>≤512 chars, echoed back in status webhooks</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td><code>"read"</code></td>
+<td></td>
+<td>For read receipts (see below)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="message-types-type-field">Message types (<code>type</code> field)<a class="headerlink" href="#message-types-type-field" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th><code>type</code></th>
+<th>Payload key</th>
+<th>Options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>text</code></td>
+<td><code>text</code></td>
+<td><code>body</code> (≤4096), <code>preview_url</code> (bool) for link previews</td>
+</tr>
+<tr>
+<td><code>image</code></td>
+<td><code>image</code></td>
+<td><code>id</code> or <code>link</code>, <code>caption</code></td>
+</tr>
+<tr>
+<td><code>audio</code></td>
+<td><code>audio</code></td>
+<td><code>id</code> or <code>link</code></td>
+</tr>
+<tr>
+<td><code>video</code></td>
+<td><code>video</code></td>
+<td><code>id</code> or <code>link</code>, <code>caption</code></td>
+</tr>
+<tr>
+<td><code>document</code></td>
+<td><code>document</code></td>
+<td><code>id</code> or <code>link</code>, <code>caption</code>, <code>filename</code></td>
+</tr>
+<tr>
+<td><code>sticker</code></td>
+<td><code>sticker</code></td>
+<td><code>id</code> or <code>link</code> (WebP 512×512, ≤100KB static / 500KB animated)</td>
+</tr>
+<tr>
+<td><code>location</code></td>
+<td><code>location</code></td>
+<td><code>latitude</code>, <code>longitude</code>, <code>name</code>, <code>address</code></td>
+</tr>
+<tr>
+<td><code>contacts</code></td>
+<td><code>contacts</code></td>
+<td>Array of contact objects: <code>name</code> (<code>formatted_name</code>, <code>first_name</code>…), <code>phones</code> (<code>phone</code>, <code>wa_id</code>, <code>type</code>), <code>emails</code>, <code>urls</code>, <code>addresses</code>, <code>birthday</code>, <code>org</code></td>
+</tr>
+<tr>
+<td><code>reaction</code></td>
+<td><code>reaction</code></td>
+<td><code>message_id</code>, <code>emoji</code> (empty string removes reaction)</td>
+</tr>
+<tr>
+<td><code>template</code></td>
+<td><code>template</code></td>
+<td><code>name</code>, <code>language.code</code>, <code>components[]</code> (see §4)</td>
+</tr>
+<tr>
+<td><code>interactive</code></td>
+<td><code>interactive</code></td>
+<td><code>type</code>, <code>header</code>, <code>body</code>, <code>footer</code>, <code>action</code> (see below)</td>
+</tr>
+<tr>
+<td><code>address</code></td>
+<td><code>address</code> (interactive, India)</td>
+<td>Address-form interactive message</td>
+</tr>
+<tr>
+<td><code>location_request</code></td>
+<td>via <code>interactive.action.name: "send_location"</code></td>
+<td>Requests user's location</td>
+</tr>
+</tbody>
+</table>
+<h4 id="interactive-message-action-options">Interactive message <code>action</code> options<a class="headerlink" href="#interactive-message-action-options" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th><code>interactive.type</code></th>
+<th><code>action</code> fields</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>button</code> (reply buttons)</td>
+<td><code>buttons[]</code> — max 3, each <code>{type:"reply", reply:{id,title(≤20)}}</code></td>
+</tr>
+<tr>
+<td><code>list</code></td>
+<td><code>button</code> (label), <code>sections[]</code> — max 10, rows per section max 10, each row <code>{id,title(≤24),description}</code></td>
+</tr>
+<tr>
+<td><code>cta_url</code></td>
+<td><code>name:"cta_url"</code>, <code>parameters:{display_text,url}</code></td>
+</tr>
+<tr>
+<td><code>catalog_message</code></td>
+<td><code>name:"catalog_message"</code>, <code>parameters:{thumbnail_product_retailer_id?}</code></td>
+</tr>
+<tr>
+<td><code>product</code> (SPM)</td>
+<td><code>catalog_id</code>, <code>product_retailer_id</code></td>
+</tr>
+<tr>
+<td><code>product_list</code> (MPM)</td>
+<td><code>catalog_id</code>, <code>sections[]</code> with <code>product_items[]</code> (<code>product_retailer_id</code>), max 30 items</td>
+</tr>
+<tr>
+<td><code>flow</code></td>
+<td><code>name:"flow"</code>, <code>parameters:{flow_token?, flow_id</code> or <code>flow_name</code>, flow_cta, flow_action:"navigate"|"data_exchange", flow_action_payload:{screen, data}}<code>,</code>mode:"draft"` for draft flows</td>
+</tr>
+<tr>
+<td><code>call_permission_request</code></td>
+<td>Call permission request interactive</td>
+</tr>
+<tr>
+<td><code>order_details</code></td>
+<td>India payments order message</td>
+</tr>
+<tr>
+<td><code>order_status</code></td>
+<td>Order status update</td>
+</tr>
+<tr>
+<td><code>wa_pay</code> / <code>payment_settings</code></td>
+<td>Brazil/ROW payments</td>
+</tr>
+<tr>
+<td><code>voice_call</code></td>
+<td>Voice call CTA button</td>
+</tr>
+<tr>
+<td><code>location_request_message</code></td>
+<td><code>name:"send_location"</code> body</td>
+</tr>
+</tbody>
+</table>
+<p>Headers for interactive: <code>type: text|image|video|document</code> + matching payload;
+<code>sub_text</code> optional. <code>body.text</code>, <code>footer.text</code> optional/required by type.</p>
+<h4 id="read-receipts-typing-indicator">Read receipts &amp; typing indicator<a class="headerlink" href="#read-receipts-typing-indicator" title="Permanent link">&para;</a></h4>
+<p>Same endpoint, sentinel payload:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span><span class="w"> </span><span class="nt">"messaging_product"</span><span class="p">:</span><span class="s2">"whatsapp"</span><span class="p">,</span><span class="w"> </span><span class="nt">"status"</span><span class="p">:</span><span class="s2">"read"</span><span class="p">,</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">"message_id"</span><span class="p">:</span><span class="s2">"&lt;wamid&gt;"</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">"typing_indicator"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"type"</span><span class="p">:</span><span class="s2">"text"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p><code>typing_indicator</code> is optional; include to show "typing…" in the user's app.</p>
+<h4 id="media-upload-constraints">Media upload constraints<a class="headerlink" href="#media-upload-constraints" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Formats</th>
+<th>Max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Image</td>
+<td>JPEG, PNG</td>
+<td>5 MB</td>
+</tr>
+<tr>
+<td>Video</td>
+<td>MP4, 3GPP (H.264/AAC only)</td>
+<td>16 MB</td>
+</tr>
+<tr>
+<td>Audio</td>
+<td>AAC, MP4, MPEG, AMR, OGG (Opus only)</td>
+<td>16 MB</td>
+</tr>
+<tr>
+<td>Document</td>
+<td>Any MIME</td>
+<td>100 MB</td>
+</tr>
+<tr>
+<td>Sticker</td>
+<td>WebP 512×512</td>
+<td>100 KB / 500 KB animated</td>
+</tr>
+</tbody>
+</table>
+<h3 id="post-phone-number-idmarketing_messages-marketing-messages-mm-lite-api"><code>POST /{Phone-Number-ID}/marketing_messages</code> — Marketing Messages (MM Lite) API<a class="headerlink" href="#post-phone-number-idmarketing_messages-marketing-messages-mm-lite-api" title="Permanent link">&para;</a></h3>
+<p>Lightweight marketing sends with Meta-side optimizations. Body:
+<code>messaging_product</code>, <code>recipient_type:"individual"</code>, <code>to</code>, <code>type:"template"</code>,
+<code>template{...}</code> (same schema as messages), plus optional
+<code>product_policy: "CLOUD_API_FALLBACK"|"STRICT"</code> and
+<code>message_activity_sharing: bool</code>.</p>
+<hr />
+<h2 id="3-media">3. Media<a class="headerlink" href="#3-media" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Path</th>
+<th>Purpose</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Phone-Number-ID}/media</code></td>
+<td>Upload media</td>
+<td><code>multipart/form-data</code>: <code>file</code>, <code>messaging_product:"whatsapp"</code>, <code>type</code> (MIME). Returns <code>{id}</code>. ID valid ~30 days</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Media-ID}</code></td>
+<td>Get media info/URL</td>
+<td>Returns <code>url</code>, <code>mime_type</code>, <code>sha256</code>, <code>file_size</code>. Query <code>phone_number_id</code> required when token covers multiple numbers</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Media-URL}</code></td>
+<td>Download bytes</td>
+<td>GET the returned URL <strong>with</strong> <code>Authorization</code> header (and <code>User-Agent</code> on some setups)</td>
+</tr>
+<tr>
+<td><code>DELETE</code></td>
+<td><code>/{Media-ID}</code></td>
+<td>Delete media</td>
+<td>Query <code>phone_number_id</code> when ambiguous</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resumable-upload-api-graph-api-file-upload">Resumable Upload API (Graph API file upload)<a class="headerlink" href="#resumable-upload-api-graph-api-file-upload" title="Permanent link">&para;</a></h3>
+<p>Required for <strong>template header media</strong> and <strong>profile pictures</strong> — produces an
+asset <em>handle</em> (<code>h:…</code>) instead of a media ID:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Path</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{App-ID}/uploads?file_name=…&amp;file_length=…&amp;file_type=…</code></td>
+<td>Create upload session → returns <code>upload_id</code> (a <code>h:</code> handle)</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Upload-ID}</code> (header <code>OAuth &lt;token&gt;</code>, <code>file_offset</code>)</td>
+<td>Upload binary, returns handle for use in <code>profile_picture_handle</code> / template <code>example.header_handle</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-message-templates-whatsapp-business-account">4. Message Templates — <code>whatsapp-business-account</code><a class="headerlink" href="#4-message-templates-whatsapp-business-account" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Path</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{WABA-ID}/message_templates</code></td>
+<td>List templates. Query: <code>fields</code>, <code>limit</code>, <code>after</code>, <code>before</code>; filters via <code>fields</code> (<code>name</code>, <code>category</code>, <code>status</code>, <code>language</code>, <code>quality_score</code>, <code>components</code>, <code>id</code>, <code>rejected_reason</code>)</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{WABA-ID}/message_templates</code></td>
+<td>Create template</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{TEMPLATE_ID}</code></td>
+<td>Get one template (<code>fields</code>)</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{TEMPLATE_ID}</code></td>
+<td>Edit template</td>
+</tr>
+<tr>
+<td><code>DELETE</code></td>
+<td><code>/{WABA-ID}/message_templates</code></td>
+<td>Delete by <code>name</code> (all languages), <code>name</code>+<code>hsm_id</code> (one language), or <code>hsm_ids</code> JSON array (≤100)</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{WABA-ID}/migrate_message_templates</code></td>
+<td>Migrate templates between WABAs (source/destination WABA + template names)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Create/edit body:</strong> <code>name</code>* (lowercase, <code>_</code>), <code>language</code>* (e.g. <code>en_US</code>),
+<code>category</code>* (<code>UTILITY</code>|<code>MARKETING</code>|<code>AUTHENTICATION</code>), <code>components[]</code>,
+<code>parameter_format</code> (<code>named</code>|<code>positional</code>), <code>allow_category_change</code>,
+<code>cta_url_link_tracking_opted_out</code>, <code>message_send_ttl_seconds</code>,
+<code>sub_category</code>, <code>display_format</code>, <code>library_template_name</code> +
+<code>library_template_body_inputs</code>/<code>library_template_button_inputs</code> (clone from
+library), <code>is_primary_device_delivery_only</code>, <code>send_type</code> (MM Lite).</p>
+<p><strong>Components:</strong> <code>HEADER</code> (<code>format: TEXT|IMAGE|VIDEO|DOCUMENT|LOCATION|PRODUCT</code>,
+<code>example.header_text</code> / <code>example.header_handle</code>), <code>BODY</code> (<code>text</code> with
+<code>{{1}}</code>/<code>{{name}}</code> params, <code>example.body_text</code>/<code>body_text_named_params</code>),
+<code>FOOTER</code>, <code>BUTTONS</code> (<code>QUICK_REPLY</code>, <code>URL</code>, <code>PHONE_NUMBER</code>, <code>OTP</code>,
+<code>COPY_CODE</code>, <code>CATALOG</code>, <code>MPM</code>, <code>SPM</code>, <code>FLOW</code>, <code>VOICE_CALL</code>, <code>APP</code>),
+<code>CAROUSEL</code> (media card carousels), <code>LIMITED_TIME_OFFER</code>.</p>
+<p><strong>Statuses:</strong> <code>APPROVED</code>, <code>PENDING</code>/<code>IN_APPEAL</code>, <code>REJECTED</code>, <code>PAUSED</code>,
+<code>DISABLED</code>, <code>PENDING_DELETION</code>, <code>DELETED</code>, <code>LIMIT_EXCEEDED</code>. Quality scores
+<code>GREEN</code>/<code>YELLOW</code>/<code>RED</code>/<code>UNKNOWN</code> via <code>quality_score</code> field.</p>
+<p>Rate limit: max 100 template creates per WABA per hour.</p>
+<hr />
+<h2 id="5-phone-numbers">5. Phone Numbers<a class="headerlink" href="#5-phone-numbers" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Path</th>
+<th>Purpose</th>
+<th>Body/params</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{WABA-ID}/phone_numbers</code></td>
+<td>List numbers on WABA</td>
+<td><code>fields</code>, <code>filtering</code> (e.g. <code>[{"field":"account_mode","operator":"EQUAL","value":"SANDBOX"}]</code>), <code>sort</code> (<code>creation_time.asc|desc</code>, <code>last_onboarded_time.asc|desc</code>), paging</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{WABA-ID}/phone_numbers</code></td>
+<td>Add number to WABA</td>
+<td><code>cc</code><em>, <code>phone_number</code></em> (E.164 no <code>+</code>), <code>verified_name</code>*, <code>migrate_phone_number</code>, <code>preverified_id</code></td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Phone-Number-ID}</code></td>
+<td>Number details</td>
+<td><code>fields</code>: <code>id</code>, <code>verified_name</code>, <code>display_phone_number</code>, <code>quality_rating</code>, <code>code_verification_status</code>, <code>platform_type</code>, <code>throughput</code>, <code>webhook_configuration</code>, <code>last_onboarded_time</code>, <code>is_official_business_account</code>, <code>account_mode</code>, <code>messaging_limit_tier</code>, <code>status</code>, <code>certificate</code>, <code>name_status</code>, <code>new_name_status</code>, <code>search_visibility</code>, <code>health_status</code></td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Phone-Number-ID}</code></td>
+<td>Update number config</td>
+<td><code>webhook_configuration</code>, <code>webhook_url</code>, <code>pin</code>, <code>new_display_name</code>, <code>username</code>, <code>search_visibility</code>, <code>connection_status</code>, <code>whatsapp_business_api_data</code></td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Phone-Number-ID}/register</code></td>
+<td>Register (after verification)</td>
+<td><code>messaging_product</code>, <code>pin</code>* (6-digit 2FA), <code>data_localization_region</code>, <code>backup</code></td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Phone-Number-ID}/deregister</code></td>
+<td>Deregister</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Phone-Number-ID}/request_code</code></td>
+<td>Send verification code</td>
+<td><code>code_method: SMS\|VOICE</code>*, <code>language</code></td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Phone-Number-ID}/verify_code</code></td>
+<td>Verify code</td>
+<td><code>code</code>*</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Phone-Number-ID}/settings</code></td>
+<td>Get settings</td>
+<td><code>include_sip_credentials</code></td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Phone-Number-ID}/settings</code></td>
+<td>Update settings</td>
+<td>One of: <code>calling{...}</code>, <code>user_identity_change{...}</code>, <code>payload_encryption{...}</code>, <code>storage_configuration{...}</code></td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Phone-Number-ID}/official_business_account</code></td>
+<td>OBA status</td>
+<td><code>fields</code></td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Phone-Number-ID}/official_business_account</code></td>
+<td>Update OBA</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="6-business-profile-commerce-automation-qr">6. Business Profile, Commerce, Automation, QR<a class="headerlink" href="#6-business-profile-commerce-automation-qr" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Path</th>
+<th>Purpose</th>
+<th>Body/params</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Phone-Number-ID}/whatsapp_business_profile</code></td>
+<td>Get profile</td>
+<td><code>fields</code>: <code>about</code>, <code>address</code>, <code>description</code>, <code>email</code>, <code>profile_picture_url</code>, <code>websites</code>, <code>vertical</code></td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Phone-Number-ID}/whatsapp_business_profile</code></td>
+<td>Update profile</td>
+<td><code>messaging_product</code>*, <code>about</code>, <code>address</code>, <code>description</code>, <code>email</code>, <code>websites[]</code>, <code>vertical</code>, <code>profile_picture_handle</code> (from Resumable Upload)</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{WhatsApp-Business-Profile-ID}</code></td>
+<td>Profile node (alt)</td>
+<td><code>fields</code></td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{WhatsApp-Business-Profile-ID}</code></td>
+<td>Update profile node</td>
+<td>same fields</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Phone-Number-ID}/whatsapp_commerce_settings</code></td>
+<td>Get commerce settings</td>
+<td>returns <code>is_cart_enabled</code>, <code>is_catalog_visible</code>, <code>id</code></td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Phone-Number-ID}/whatsapp_commerce_settings</code></td>
+<td>Set commerce</td>
+<td>query <code>is_cart_enabled</code>, <code>is_catalog_visible</code></td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Phone-Number-ID}/business_compliance_info</code></td>
+<td>India compliance info</td>
+<td><code>fields</code></td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Phone-Number-ID}/business_compliance_info</code></td>
+<td>Update compliance</td>
+<td><code>entity_name</code><em>, <code>entity_type</code></em>, <code>grievance_officer_details</code><em>, <code>customer_care_details</code></em>, <code>is_registered</code>, <code>entity_type_custom</code></td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Phone-Number-ID}/conversational_automation</code></td>
+<td>Welcome message config</td>
+<td><code>enable_welcome_message</code>, <code>prompts[]</code> (ice breakers), <code>commands[]</code> (<code>command_name</code>, <code>command_description</code>)</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Phone-Number-ID}/message_qrdls</code></td>
+<td>List QR codes</td>
+<td><code>fields</code>, <code>code</code>, <code>limit</code> ≤25, paging</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Phone-Number-ID}/message_qrdls</code></td>
+<td>Create/update QR</td>
+<td><code>prefilled_message</code> (≤140 chars), <code>generate_qr_image: PNG\|SVG</code>; update via <code>code</code></td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Phone-Number-ID}/message_qrdls/{QR-Code-ID}</code></td>
+<td>Get QR code</td>
+<td><code>fields</code></td>
+</tr>
+<tr>
+<td><code>DELETE</code></td>
+<td><code>/{Phone-Number-ID}/message_qrdls/{QR-Code-ID}</code></td>
+<td>Delete QR code</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Phone-Number-ID}/whatsapp_business_encryption</code></td>
+<td>Get Flows pubkey</td>
+<td><code>fields</code></td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Phone-Number-ID}/whatsapp_business_encryption</code></td>
+<td>Set pubkey</td>
+<td><code>business_public_key</code>* (PEM; for Flows end-to-end encryption)</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Phone-Number-ID}/block_users</code></td>
+<td>List blocked users</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Phone-Number-ID}/block_users</code></td>
+<td>Block users</td>
+<td><code>block_users:[{user}]</code>, <code>messaging_product</code></td>
+</tr>
+<tr>
+<td><code>DELETE</code></td>
+<td><code>/{Phone-Number-ID}/block_users</code></td>
+<td>Unblock</td>
+<td>same body</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="7-calling-api-voip">7. Calling API (VoIP)<a class="headerlink" href="#7-calling-api-voip" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Path</th>
+<th>Purpose</th>
+<th>Body/params</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Phone-Number-ID}/call_permissions</code></td>
+<td>Check permission to call a user</td>
+<td><code>user_wa_id</code>* → <code>permission.status</code> (<code>granted</code>/<code>pending</code>/<code>denied</code>/<code>expired</code>), <code>actions[]</code> (<code>start_call</code>, <code>send_call_permission_request</code> + rate <code>limits</code>)</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Phone-Number-ID}/calls</code></td>
+<td>Manage calls</td>
+<td><code>messaging_product</code>, <code>action</code>*</td>
+</tr>
+</tbody>
+</table>
+<p>Call actions (body <code>action</code> field): <code>connect</code> (initiate; <code>to</code> + <code>session:{sdp_type:"offer", sdp}</code>),
+<code>pre_accept</code>, <code>accept</code> (<code>session</code> answer), <code>reject</code>, <code>terminate</code>
+(<code>call_id</code> body variant), <code>media_update</code>. Optional
+<code>biz_opaque_callback_data</code>. Call settings via <code>POST /{Phone-Number-ID}/settings</code>
+<code>calling</code> object (enable calling, call icon visibility, SIP credentials,
+callback permission restrictions). Webhooks field: <code>calls</code> (SDP events,
+connect/terminate, permission updates).</p>
+<hr />
+<h2 id="8-groups">8. Groups<a class="headerlink" href="#8-groups" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Path</th>
+<th>Purpose</th>
+<th>Body/params</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Phone-Number-ID}/groups</code></td>
+<td>List groups</td>
+<td><code>limit</code> ≤1024, paging</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Phone-Number-ID}/groups</code></td>
+<td>Create group</td>
+<td><code>subject</code>* ≤128, <code>description</code> ≤2048, <code>join_approval_mode: approval_required\|auto_approve</code></td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{group_id}</code></td>
+<td>Group info</td>
+<td><code>fields</code> (<code>subject</code>, <code>description</code>, <code>creation_timestamp</code>, <code>invite_link</code>, <code>join_approval_mode</code>, <code>is_locked</code>, <code>participants</code>…)</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{group_id}</code></td>
+<td>Update group</td>
+<td><code>subject</code>, <code>description</code>; profile pic via <code>profile_picture_file</code> or multipart <code>file</code> (JPEG ≤5MB square)</td>
+</tr>
+<tr>
+<td><code>DELETE</code></td>
+<td><code>/{group_id}</code></td>
+<td>Delete/leave group</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{group_id}/participants</code></td>
+<td>Add members</td>
+<td><code>participants[]</code> (phone/WA-ID, max 8/request)</td>
+</tr>
+<tr>
+<td><code>DELETE</code></td>
+<td><code>/{group_id}/participants</code></td>
+<td>Remove members</td>
+<td>same</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{group_id}/invite_link</code></td>
+<td>Create invite link</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>DELETE</code></td>
+<td><code>/{group_id}/invite_link</code></td>
+<td>Revoke invite link</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{group_id}/join_requests</code></td>
+<td>List join requests</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{group_id}/join_requests</code></td>
+<td>Approve</td>
+<td><code>join_requests[]</code> IDs</td>
+</tr>
+<tr>
+<td><code>DELETE</code></td>
+<td><code>/{group_id}/join_requests</code></td>
+<td>Reject</td>
+<td><code>join_requests[]</code> IDs</td>
+</tr>
+</tbody>
+</table>
+<p>Group messages are sent via <code>POST /{Phone-Number-ID}/messages</code> with
+<code>recipient_type:"group"</code> and <code>to:&lt;group_id&gt;</code>.</p>
+<hr />
+<h2 id="9-flows-api-management">9. Flows API (management)<a class="headerlink" href="#9-flows-api-management" title="Permanent link">&para;</a></h2>
+<p>Flows live under the WABA; sent via interactive <code>flow</code> messages or FLOW button
+templates.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Path</th>
+<th>Purpose</th>
+<th>Params</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{WABA-ID}/flows</code></td>
+<td>Create flow</td>
+<td><code>name</code><em>, <code>categories[]</code></em> (<code>SIGN_UP</code>, <code>SIGN_IN</code>, <code>APPOINTMENT_BOOKING</code>, <code>LEAD_GENERATION</code>, <code>CONTACT_US</code>, <code>CUSTOMER_SUPPORT</code>, <code>SURVEY</code>, <code>OTHER</code>), <code>flow_json</code>, <code>publish</code>, <code>clone_flow_id</code>, <code>endpoint_uri</code></td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{WABA-ID}/flows</code></td>
+<td>List flows</td>
+<td>paging</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{FLOW-ID}</code></td>
+<td>Flow details</td>
+<td><code>fields</code>: <code>id</code>, <code>name</code>, <code>categories</code>, <code>preview</code>, <code>status</code> (<code>DRAFT</code>|<code>PUBLISHED</code>|<code>DEPRECATED</code>|<code>BLOCKED</code>|<code>THROTTLED</code>), <code>validation_errors</code>, <code>json_version</code>, <code>data_api_version</code>, <code>endpoint_uri</code>, <code>whatsapp_business_account</code>, <code>application</code>, <code>health_status</code>, <code>metrics</code></td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{FLOW-ID}</code></td>
+<td>Update metadata</td>
+<td><code>name</code>, <code>categories</code>, <code>endpoint_uri</code>, <code>application_id</code></td>
+</tr>
+<tr>
+<td><code>DELETE</code></td>
+<td><code>/{FLOW-ID}</code></td>
+<td>Delete (DRAFT only)</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{FLOW-ID}/assets</code></td>
+<td>Update flow JSON</td>
+<td><code>multipart</code>: <code>name:"flow.json"</code>, <code>asset_type:"FLOW_JSON"</code>, <code>file</code> (≤10MB)</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{FLOW-ID}/assets</code></td>
+<td>List assets</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{FLOW-ID}?fields=preview.invalidate(&lt;bool&gt;)</code></td>
+<td>Web preview URL</td>
+<td><code>interactive</code>, <code>flow_token</code> URL params</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{FLOW-ID}/publish</code></td>
+<td>Publish</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{FLOW-ID}/deprecate</code></td>
+<td>Deprecate</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{WABA-ID}/migrate_flows</code></td>
+<td>Copy flows across WABAs</td>
+<td>query <code>source_waba_id</code>*, <code>source_flow_names[]</code> (≤100)</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Message-History-ID}/events</code></td>
+<td>Message history events</td>
+<td><code>delivery_status</code>, <code>fields</code>, paging</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="10-whatsapp-business-account-node">10. WhatsApp Business Account node<a class="headerlink" href="#10-whatsapp-business-account-node" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Path</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{WABA-ID}</code></td>
+<td>WABA details; <code>fields</code> incl. <code>name</code>, <code>currency</code>, <code>timezone_id</code>, <code>message_template_namespace</code>, <code>on_behalf_of_business_info</code>, <code>primary_business_location</code>, <code>is_enabled_for_insights</code>, <strong><code>analytics</code></strong> (conversation costs/volume), <strong><code>template_analytics</code></strong>, <code>health_status</code>, <code>account_review_status</code>, <code>business_capabilities</code>, <code>pricing_configuration</code></td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{WABA-ID}</code></td>
+<td>Update WABA (<code>name</code>, <code>timezone_id</code>)</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{WABA-ID}/activities</code></td>
+<td>Account activity log</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{WABA-ID}/solutions</code></td>
+<td>Multi-partner solutions attached</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{WABA-ID}/schedules</code> + <code>POST</code></td>
+<td>Scheduled template campaigns (<code>hsm_id</code>, <code>audience_id</code>, <code>waba_cs_id</code>, <code>delivery_time</code>, <code>name</code>, <code>description</code>)</td>
+</tr>
+<tr>
+<td><code>GET</code>/<code>POST</code>/<code>DELETE</code></td>
+<td><code>/{WABA-ID}/assigned_users</code></td>
+<td>Manage WABA user access (<code>user</code>, <code>tasks[]</code> permission tasks; GET requires <code>business</code> param)</td>
+</tr>
+<tr>
+<td><code>GET</code>/<code>POST</code>/<code>DELETE</code></td>
+<td><code>/{WABA-ID}/subscribed_apps</code></td>
+<td>Webhook app subscription; POST body <code>override_callback_uri</code>, <code>verify_token</code></td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Migration-Intent-ID}</code></td>
+<td>WABA migration intent status</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Analytics fields</strong> on <code>GET /{WABA-ID}</code>: <code>analytics.start</code>, <code>.end</code>,
+<code>.granularity</code> (<code>HALF_HOUR</code>|<code>DAY</code>|<code>MONTH</code>), <code>.phone_numbers[]</code>; and
+<code>template_analytics</code> (per-template sent/delivered/read/clicked).</p>
+<hr />
+<h2 id="11-business-portfolio-partner-endpoints">11. Business portfolio &amp; partner endpoints<a class="headerlink" href="#11-business-portfolio-partner-endpoints" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Path</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Business-ID}</code></td>
+<td>Business portfolio details</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Business-ID}/whatsapp_business_accounts</code></td>
+<td>All WABAs (<code>business_type: ENTERPRISE\|SMB</code>, <code>find</code>, paging)</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Business-ID}/whatsapp_business_accounts</code></td>
+<td>Create WABA</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Business-ID}/client_whatsapp_business_accounts</code></td>
+<td>Client WABAs (<code>business_type: STANDARD\|PREMIUM\|ENTERPRISE</code>)</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Business-ID}/owned_whatsapp_business_accounts</code></td>
+<td>Owned WABAs (<code>first</code>/<code>last</code> paging, <code>find</code>)</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Business-ID}/add_phone_numbers</code></td>
+<td>Add phone number to business</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Business-ID}/preverified_numbers</code></td>
+<td>List pre-verified numbers (<code>phone_number</code>, <code>code_verification_status</code> filters)</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Business-ID}/share_preverified_numbers</code></td>
+<td>Share pre-verified number with another business</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Business-ID}/extendedcredits</code></td>
+<td>Credit lines (<code>order_by_is_owned_credential</code>)</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Business-ID}/onboard_partners_to_mm_lite</code></td>
+<td>Onboard partner to MM Lite (<code>solution_id</code>)</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{User-ID}/assigned_whatsapp_business_accounts</code></td>
+<td>WABAs a user can access</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Application-ID}/connected_client_businesses</code></td>
+<td>App's connected client businesses</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Application-ID}/whatsapp_business_solutions</code></td>
+<td>App's multi-partner solutions (<code>role</code> filter)</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/{Application-ID}/whatsapp_business_solution</code></td>
+<td>Create solution</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{Solution-ID}</code> + <code>/access_token</code> (requires <code>business_id</code>), <code>POST /accept</code>, <code>/reject</code>, <code>/send_deactivation_request</code>, <code>/accept_deactivation_request</code>, <code>/reject_deactivation_request</code></td>
+<td>Multi-partner solution lifecycle</td>
+</tr>
+<tr>
+<td><code>GET</code>/<code>POST</code>/<code>DELETE</code></td>
+<td><code>/{Pre-Verified-Phone-Number-ID}</code> (+ <code>/request_code</code>, <code>/verify_code</code>, <code>/partners</code>)</td>
+<td>Pre-verified number lifecycle</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{WhatsApp-Account-Number-ID}</code></td>
+<td>Messaging-account number details</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/{WABA-Bot-ID}</code></td>
+<td>Meta Business Bot details</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="12-webhooks">12. Webhooks<a class="headerlink" href="#12-webhooks" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Side</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verification</td>
+<td><code>GET &lt;callback&gt;</code> with <code>hub.mode</code>, <code>hub.verify_token</code>, <code>hub.challenge</code> → echo <code>hub.challenge</code></td>
+</tr>
+<tr>
+<td>Events</td>
+<td><code>POST &lt;callback&gt;</code> JSON <code>{object:"whatsapp_business_account", entry:[{id, changes:[{field, value}]}]}</code></td>
+</tr>
+<tr>
+<td>Signature</td>
+<td><code>X-Hub-Signature-256</code>: <code>sha256=</code> HMAC of raw body with <strong>app secret</strong></td>
+</tr>
+<tr>
+<td>Subscription</td>
+<td>App dashboard or <code>POST /{WABA-ID}/subscribed_apps</code> (with optional <code>override_callback_uri</code>, <code>verify_token</code>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="webhook-field-values-change-types">Webhook <code>field</code> values (change types)<a class="headerlink" href="#webhook-field-values-change-types" title="Permanent link">&para;</a></h3>
+<p><code>messages</code> (inbound messages + statuses), <code>message_template_status_update</code>,
+<code>message_template_quality_update</code>, <code>message_template_components_update</code>,
+<code>template_category_update</code>, <code>account_update</code>, <code>account_alerts</code>,
+<code>account_review_update</code>, <code>business_capability_update</code>,
+<code>phone_number_name_update</code>, <code>phone_number_quality_update</code>, <code>history</code>,
+<code>messaging_handovers</code>, <code>partner_solutions</code>, <code>payment_configuration_update</code>,
+<code>security</code>, <code>smb_app_state_sync</code>, <code>smb_message_echoes</code>, <code>standby</code>,
+<code>user_preferences</code>, <code>group_text_messages</code>, <code>calls</code>, <code>flows</code>.</p>
+<h3 id="messages-value-payloads"><code>messages</code> value payloads<a class="headerlink" href="#messages-value-payloads" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Inbound <code>messages[]</code> types: <code>text</code>, <code>image</code>, <code>audio</code>, <code>video</code>, <code>document</code>,
+  <code>sticker</code>, <code>location</code>, <code>contacts</code>, <code>reaction</code>, <code>interactive</code>
+  (<code>button_reply</code>, <code>list_reply</code>, <code>nfm_reply</code> for Flows, <code>product_inquiry</code>,
+  <code>order</code>, <code>address</code>), <code>button</code>, <code>order</code>, <code>system</code>, <code>referral</code>,
+  <code>unknown</code>/unsupported, <code>group_*</code>, <code>call_*</code>.</li>
+<li><code>statuses[]</code>: <code>sent</code>, <code>delivered</code>, <code>read</code>, <code>failed</code> (with <code>errors[]</code> code +
+  <code>error_data.details</code>), <code>warning</code>; includes <code>conversation{id, origin.type}</code>
+  and <code>pricing{pricing_model, category, billable}</code>.</li>
+<li><code>contacts[]</code> (sender <code>wa_id</code>, <code>profile.name</code>), <code>metadata</code>
+  (<code>display_phone_number</code>, <code>phone_number_id</code>), <code>errors[]</code>, <code>identity</code>
+  (user identity change hash).</li>
+<li><code>echoes</code> (SMB/coexistence), <code>history</code> (chat sync), <code>smb_app_state_sync</code>.</li>
+</ul>
+<hr />
+<h2 id="13-supporting-apis-mechanics">13. Supporting APIs &amp; mechanics<a class="headerlink" href="#13-supporting-apis-mechanics" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>OAuth / Embedded Signup</strong>: <code>GET /oauth/access_token</code> (code → user token);
+  <code>GET /{App-ID}/subscriptions</code> to manage webhook field subscriptions.</li>
+<li><strong>Coexistence (Business app + API)</strong>: <code>POST /{Phone-Number-ID}/smb_app_data</code>
+  (chat history sync payload from embedded signup).</li>
+<li><strong>User identity change</strong>: check <code>settings</code> → <code>user_identity_change</code>;
+  webhook <code>identity</code> field carries the identity hash; verify before trusting
+  profile data.</li>
+<li><strong>Error model</strong>: <code>{error:{message,type,code,error_subcode,fbtrace_id,
+  error_data{details},error_user_title,error_user_msg}}</code>. Common families:
+  131xxx (send/template errors), 132xxx (params), 133xxx (registration/phone),
+  4xx OAuth, rate limits (<code>#4</code>/80007/131056 pair-rate).</li>
+<li><strong>Throughput</strong>: ~80 msg/s per phone number (1,000/s high-throughput tier);
+  template pacing + per-user marketing template limits apply.</li>
+<li><strong>24-hour customer service window</strong>: free-form messages only inside the
+  window opened by the last inbound user message; outside → template required.</li>
+</ul>
+<hr />
+<h2 id="14-endpoint-coverage-summary-build-checklist">14. Endpoint coverage summary (build checklist)<a class="headerlink" href="#14-endpoint-coverage-summary-build-checklist" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Resource module</th>
+<th>Endpoints</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>messages</code></td>
+<td>1 POST, ~15 payload types</td>
+</tr>
+<tr>
+<td><code>marketing_messages</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>media</code></td>
+<td>4 (+2 resumable upload)</td>
+</tr>
+<tr>
+<td><code>templates</code></td>
+<td>6</td>
+</tr>
+<tr>
+<td><code>phone_numbers</code></td>
+<td>11 (WABA list/add + node get/update + register/deregister/request_code/verify_code/settings/OBA)</td>
+</tr>
+<tr>
+<td><code>profile</code></td>
+<td>4 (+ profile node 2)</td>
+</tr>
+<tr>
+<td><code>commerce</code> / <code>compliance</code> / <code>automation</code> / <code>encryption</code> / <code>block</code></td>
+<td>2+2+1+2+3</td>
+</tr>
+<tr>
+<td><code>calling</code></td>
+<td>2 (+ settings)</td>
+</tr>
+<tr>
+<td><code>groups</code></td>
+<td>12</td>
+</tr>
+<tr>
+<td><code>qr_codes</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td><code>flows</code></td>
+<td>11</td>
+</tr>
+<tr>
+<td><code>waba</code> (account, analytics, activities, schedules, users, subscribed_apps, solutions, migration)</td>
+<td>12</td>
+</tr>
+<tr>
+<td><code>business</code> (portfolio, client/owned WABAs, phone numbers, credits, preverified, MM-lite)</td>
+<td>9</td>
+</tr>
+<tr>
+<td><code>app</code>/<code>solutions</code>/<code>user</code>/<code>account_number</code>/<code>bot</code></td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>~100 operations</strong></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.highlight", "content.code.copy", "content.action.view"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>

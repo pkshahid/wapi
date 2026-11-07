@@ -1,0 +1,77 @@
+site_name: wapi — WhatsApp Business Platform for Python
+site_description: Complete, typed Python client for the WhatsApp Business Platform (Cloud API)
+repo_url: https://github.com/wapi-py/wapi
+docs_dir: docs
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.highlight
+    - content.code.copy
+    - content.action.view
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [src]
+          options:
+            docstring_style: google
+            show_source: true
+            show_root_heading: true
+            members_order: source
+            separate_signature: true
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation & Quickstart: quickstart.md
+      - Configuration: configuration.md
+  - Guides:
+      - Sending Messages: guides/messages.md
+      - Media: guides/media.md
+      - Templates: guides/templates.md
+      - Phone Numbers & Profile: guides/account.md
+      - Calls, Groups & Flows: guides/extended.md
+      - Webhooks: guides/webhooks.md
+      - Errors & Retries: guides/errors.md
+      - Async Client: guides/async.md
+  - API Reference:
+      - api/index.md
+      - Client: api/client.md
+      - Builders: api/builders.md
+      - Resources: api/resources.md
+      - Types: api/types.md
+      - Webhooks: api/webhooks.md
+      - Exceptions & HTTP: api/infra.md
+  - Endpoint Catalog: api-reference.md
+  - Design Plan: plan.md
