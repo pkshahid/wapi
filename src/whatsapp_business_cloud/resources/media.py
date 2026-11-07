@@ -5,8 +5,8 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
-from whatsapp_cloud.http import ApiRequest, Files, clean_params
-from whatsapp_cloud.types.media import MediaInfo, MediaUploadResult
+from whatsapp_business_cloud.http import ApiRequest, Files, clean_params
+from whatsapp_business_cloud.types.media import MediaInfo, MediaUploadResult
 
 from .base import AsyncResource, Resource
 

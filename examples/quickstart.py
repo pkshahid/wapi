@@ -1,4 +1,4 @@
-"""Quickstart for whatsapp_cloud — set env vars and run against a real WABA.
+"""Quickstart for whatsapp_business_cloud — set env vars and run against a real WABA.
 
     export WA_TOKEN=EAAB...
     export WA_PHONE_NUMBER_ID=106540352242922
@@ -11,8 +11,8 @@ from __future__ import annotations
 
 import os
 
-from whatsapp_cloud import Client
-from whatsapp_cloud.builders import Buttons, Template
+from whatsapp_business_cloud import Client
+from whatsapp_business_cloud.builders import Buttons, Template
 
 client = Client(
     access_token=os.environ["WA_TOKEN"],
@@ -22,7 +22,7 @@ client = Client(
 to = os.environ["WA_RECIPIENT"]
 
 # Send a text message.
-resp = client.messages.send_text(to=to, body="Hello from whatsapp_cloud!")
+resp = client.messages.send_text(to=to, body="Hello from whatsapp_business_cloud!")
 print("sent:", resp.message_id)
 
 # Send reply buttons.

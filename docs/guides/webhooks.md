@@ -3,7 +3,7 @@
 ## Verify + parse (framework-agnostic)
 
 ```python
-from whatsapp_cloud.webhooks import verify_or_raise, parse, InboundMessages, StatusUpdates
+from whatsapp_business_cloud.webhooks import verify_or_raise, parse, InboundMessages, StatusUpdates
 
 verify_or_raise(raw_body, headers["X-Hub-Signature-256"], app_secret)
 for event in parse(raw_body):
@@ -23,8 +23,8 @@ for event in parse(raw_body):
 
 ```python
 from fastapi import FastAPI
-from whatsapp_cloud.webhooks.fastapi import webhook_router
-from whatsapp_cloud.webhooks import InboundMessages
+from whatsapp_business_cloud.webhooks.fastapi import webhook_router
+from whatsapp_business_cloud.webhooks import InboundMessages
 
 app = FastAPI()
 

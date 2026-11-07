@@ -1,5 +1,5 @@
 # Builders
 
-::: whatsapp_cloud.builders
+::: whatsapp_business_cloud.builders
     options:
       members: true

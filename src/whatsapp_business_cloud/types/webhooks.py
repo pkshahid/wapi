@@ -1,8 +1,8 @@
 """Typed models for inbound webhook payloads.
 
 Structure: ``{object, entry: [{id, changes: [{field, value}]}]}``.
-The ``value`` object differs per ``field`` — see ``whatsapp_cloud.webhooks.parser``
-which dispatches into the event types in ``whatsapp_cloud.webhooks.events``.
+The ``value`` object differs per ``field`` — see ``whatsapp_business_cloud.webhooks.parser``
+which dispatches into the event types in ``whatsapp_business_cloud.webhooks.events``.
 """
 
 from __future__ import annotations

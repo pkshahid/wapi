@@ -1,11 +1,11 @@
-# whatsapp-cloud
+# whatsapp-business-cloud
 
 A complete, typed Python client for the **WhatsApp Business Platform** (Cloud API +
 Business Management API + Flows API).
 
 ```python
-from whatsapp_cloud import Client
-from whatsapp_cloud.builders import Buttons, Template
+from whatsapp_business_cloud import Client
+from whatsapp_business_cloud.builders import Buttons, Template
 
 client = Client(
     access_token="EAAB...",
@@ -31,11 +31,11 @@ client.calls.connect(to="1555...", sdp=offer)
 client.flows.publish(flow_id)
 
 # webhooks
-from whatsapp_cloud.webhooks import parse, verify_signature
+from whatsapp_business_cloud.webhooks import parse, verify_signature
 events = parse(request.body())
 
 # async
-from whatsapp_cloud import AsyncClient
+from whatsapp_business_cloud import AsyncClient
 async with AsyncClient("EAAB...", phone_number_id="...") as c:
     await c.messages.send_text(to="1555...", body="hi")
 ```
@@ -46,7 +46,7 @@ See `docs/api-reference.md` for the endpoint spec and `docs/plan.md` for the des
 
 ```bash
 pip install -e .          # from this repo
-pip install "whatsapp-cloud[fastapi]"  # with the webhook router extra
+pip install "whatsapp-business-cloud[fastapi]"  # with the webhook router extra
 ```
 
 ## Develop

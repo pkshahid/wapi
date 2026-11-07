@@ -3,14 +3,14 @@
 ## Install
 
 ```bash
-pip install whatsapp-cloud            # core
-pip install "whatsapp-cloud[fastapi]" # + webhook FastAPI router
+pip install whatsapp-business-cloud            # core
+pip install "whatsapp-business-cloud[fastapi]" # + webhook FastAPI router
 ```
 
 From source:
 
 ```bash
-git clone https://github.com/whatsapp-cloud-py/whatsapp-cloud && cd whatsapp-cloud
+git clone https://github.com/whatsapp-business-cloud-py/whatsapp-business-cloud && cd whatsapp-business-cloud
 pip install -e ".[dev,fastapi]"
 ```
 
@@ -25,7 +25,7 @@ You need three IDs from the Meta app dashboard (or WhatsApp Manager):
 | `waba_id` | API Setup page → WhatsApp Business Account ID |
 
 ```python
-from whatsapp_cloud import Client
+from whatsapp_business_cloud import Client
 
 client = Client(
     access_token="EAAB...",
@@ -40,7 +40,7 @@ resource method to override.
 ## First message
 
 ```python
-resp = client.messages.send_text(to="15551234567", body="Hello from whatsapp_cloud!")
+resp = client.messages.send_text(to="15551234567", body="Hello from whatsapp_business_cloud!")
 print(resp.message_id)          # -> "wamid.XXX"
 ```
 

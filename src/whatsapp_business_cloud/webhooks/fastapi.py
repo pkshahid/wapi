@@ -1,9 +1,9 @@
-"""Optional FastAPI webhook router (install ``whatsapp-cloud[fastapi]``).
+"""Optional FastAPI webhook router (install ``whatsapp-business-cloud[fastapi]``).
 
 ::
 
     from fastapi import FastAPI
-    from whatsapp_cloud.webhooks.fastapi import webhook_router
+    from whatsapp_business_cloud.webhooks.fastapi import webhook_router
 
     app = FastAPI()
 
@@ -21,7 +21,7 @@ import json
 from collections.abc import Callable
 from typing import Any
 
-from whatsapp_cloud.exceptions import WebhookSignatureError
+from whatsapp_business_cloud.exceptions import WebhookSignatureError
 
 from .events import WebhookEvent
 from .parser import parse
@@ -72,7 +72,7 @@ def webhook_router(
     Sync and async handlers are both supported.
     """
     if not _HAS_FASTAPI:  # pragma: no cover
-        raise ImportError("webhook_router requires the 'fastapi' extra: pip install whatsapp-cloud[fastapi]")
+        raise ImportError("webhook_router requires the 'fastapi' extra: pip install whatsapp-business-cloud[fastapi]")
 
     router = APIRouter()
 

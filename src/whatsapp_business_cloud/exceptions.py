@@ -34,7 +34,7 @@ __all__ = [
 
 
 class WhatsAppError(Exception):
-    """Base class for every error raised by whatsapp_cloud."""
+    """Base class for every error raised by whatsapp_business_cloud."""
 
 
 class ApiError(WhatsAppError):

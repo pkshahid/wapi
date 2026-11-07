@@ -4,9 +4,9 @@ from __future__ import annotations
 
 from typing import Any, Literal
 
-from whatsapp_cloud.builders import Media, Payload, Text, as_dict
-from whatsapp_cloud.http import ApiRequest, clean_body
-from whatsapp_cloud.types.messages import MessageResponse
+from whatsapp_business_cloud.builders import Media, Payload, Text, as_dict
+from whatsapp_business_cloud.http import ApiRequest, clean_body
+from whatsapp_business_cloud.types.messages import MessageResponse
 
 from .base import AsyncResource, Resource
 

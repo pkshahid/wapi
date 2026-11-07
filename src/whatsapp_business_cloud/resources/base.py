@@ -5,14 +5,14 @@ from __future__ import annotations
 from typing import TYPE_CHECKING, Any, TypeVar
 
 if TYPE_CHECKING:
-    from whatsapp_cloud.client import AsyncClient, Client
-    from whatsapp_cloud.http import ApiRequest
+    from whatsapp_business_cloud.client import AsyncClient, Client
+    from whatsapp_business_cloud.http import ApiRequest
 
 T = TypeVar("T")
 
 
 class Resource:
-    """Sync resource bound to a :class:`whatsapp_cloud.Client`."""
+    """Sync resource bound to a :class:`whatsapp_business_cloud.Client`."""
 
     def __init__(self, client: Client) -> None:
         self._c = client
@@ -41,7 +41,7 @@ class Resource:
 
 
 class AsyncResource:
-    """Async resource bound to an :class:`whatsapp_cloud.AsyncClient`."""
+    """Async resource bound to an :class:`whatsapp_business_cloud.AsyncClient`."""
 
     def __init__(self, client: AsyncClient) -> None:
         self._c = client

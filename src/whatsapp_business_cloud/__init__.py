@@ -1,8 +1,8 @@
-"""whatsapp_cloud — Python client for the WhatsApp Business Platform (Cloud API).
+"""whatsapp_business_cloud — Python client for the WhatsApp Business Platform (Cloud API).
 
 ::
 
-    from whatsapp_cloud import Client
+    from whatsapp_business_cloud import Client
 
     client = Client(
         access_token="EAAB...",

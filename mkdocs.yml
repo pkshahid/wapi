@@ -1,4 +1,4 @@
-site_name: whatsapp-cloud — WhatsApp Business Platform for Python
+site_name: whatsapp-business-cloud — WhatsApp Business Platform for Python
 site_description: Complete, typed Python client for the WhatsApp Business Platform (Cloud API)
 repo_url: https://github.com/pkshahid/wapi
 docs_dir: docs

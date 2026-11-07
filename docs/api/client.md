@@ -1,8 +1,8 @@
 # Client
 
-::: whatsapp_cloud.client.Client
+::: whatsapp_business_cloud.client.Client
     options:
       members: true
-::: whatsapp_cloud.client.AsyncClient
+::: whatsapp_business_cloud.client.AsyncClient
     options:
       members: true

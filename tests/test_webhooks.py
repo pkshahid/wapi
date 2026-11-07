@@ -4,8 +4,8 @@ import json
 
 import pytest
 
-from whatsapp_cloud.exceptions import WebhookSignatureError
-from whatsapp_cloud.webhooks import (
+from whatsapp_business_cloud.exceptions import WebhookSignatureError
+from whatsapp_business_cloud.webhooks import (
     InboundMessages,
     StatusUpdates,
     TemplateStatusUpdate,
@@ -14,7 +14,7 @@ from whatsapp_cloud.webhooks import (
     verify_or_raise,
     verify_signature,
 )
-from whatsapp_cloud.webhooks.signature import compute_signature
+from whatsapp_business_cloud.webhooks.signature import compute_signature
 
 SECRET = "shhh"
 BODY = b'{"object":"whatsapp_business_account","entry":[]}'
@@ -255,7 +255,7 @@ def test_fastapi_router_verification_and_dispatch():
     from fastapi import FastAPI
     from fastapi.testclient import TestClient
 
-    from whatsapp_cloud.webhooks.fastapi import webhook_router
+    from whatsapp_business_cloud.webhooks.fastapi import webhook_router
 
     received = []
     app = FastAPI()

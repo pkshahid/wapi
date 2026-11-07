@@ -4,8 +4,14 @@ import httpx
 import pytest
 
 from conftest import BASE, PNID, sent_json, sent_request
-from whatsapp_cloud import ApiError, AuthError, NotFoundError, RateLimitError, ValidationError
-from whatsapp_cloud.exceptions import MessagingError, RegistrationError
+from whatsapp_business_cloud import (
+    ApiError,
+    AuthError,
+    NotFoundError,
+    RateLimitError,
+    ValidationError,
+)
+from whatsapp_business_cloud.exceptions import MessagingError, RegistrationError
 
 
 def test_auth_header_and_version_path(api, client):
@@ -69,10 +75,10 @@ def test_retry_on_500(monkeypatch):
     import httpx
     import respx
 
-    from whatsapp_cloud import Client
+    from whatsapp_business_cloud import Client
 
     sleeps: list[float] = []
-    monkeypatch.setattr("whatsapp_cloud.http.sleep", lambda s: sleeps.append(s))
+    monkeypatch.setattr("whatsapp_business_cloud.http.sleep", lambda s: sleeps.append(s))
 
     c = Client("tok", phone_number_id=PNID, max_retries=2)
     with respx.mock(base_url=BASE) as router:

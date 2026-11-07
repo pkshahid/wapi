@@ -3,7 +3,7 @@ from __future__ import annotations
 import pytest
 
 from conftest import PNID, sent_json
-from whatsapp_cloud.builders import (
+from whatsapp_business_cloud.builders import (
     Buttons,
     CatalogMessage,
     Contact,
@@ -223,7 +223,7 @@ pytestmark_anyio = True
 
 @pytest.mark.anyio
 async def test_async_send_text(api):
-    from whatsapp_cloud import AsyncClient
+    from whatsapp_business_cloud import AsyncClient
 
     api.post(f"/{PNID}/messages").respond(200, json={"messages": [{"id": "wamid.a"}]})
     async with AsyncClient("tok", phone_number_id=PNID, max_retries=0) as c:
@@ -233,7 +233,7 @@ async def test_async_send_text(api):
 
 @pytest.mark.anyio
 async def test_async_mark_read(api):
-    from whatsapp_cloud import AsyncClient
+    from whatsapp_business_cloud import AsyncClient
 
     api.post(f"/{PNID}/messages").respond(200, json={"success": True})
     async with AsyncClient("tok", phone_number_id=PNID, max_retries=0) as c:

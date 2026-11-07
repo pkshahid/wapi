@@ -4,8 +4,14 @@ from __future__ import annotations
 
 from typing import Any
 
-from whatsapp_cloud.http import ApiRequest, clean_body, clean_params, dump_json_field, merge_fields
-from whatsapp_cloud.types.waba import Activity, Schedule, SubscribedApp, Waba
+from whatsapp_business_cloud.http import (
+    ApiRequest,
+    clean_body,
+    clean_params,
+    dump_json_field,
+    merge_fields,
+)
+from whatsapp_business_cloud.types.waba import Activity, Schedule, SubscribedApp, Waba
 
 from .base import AsyncResource, Resource
 

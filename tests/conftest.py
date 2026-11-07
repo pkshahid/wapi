@@ -4,7 +4,7 @@ import httpx
 import pytest
 import respx
 
-from whatsapp_cloud import Client
+from whatsapp_business_cloud import Client
 
 BASE = "https://graph.facebook.com/v25.0"
 PNID = "1234567890"
