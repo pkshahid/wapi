@@ -1,11 +1,11 @@
-# wapi
+# whatsapp-cloud
 
 A complete, typed Python client for the **WhatsApp Business Platform** —
 Cloud API, Business Management API, Flows API, Calling API, and webhooks.
 
 ```python
-from wapi import Client
-from wapi.builders import Buttons, Template
+from whatsapp_cloud import Client
+from whatsapp_cloud.builders import Buttons, Template
 
 client = Client(
     access_token="EAAB...",
@@ -24,7 +24,7 @@ client.messages.send_template(
 )
 ```
 
-## Why wapi
+## Why whatsapp-cloud
 
 - **Complete** — every endpoint on the platform: ~100 operations across
   messaging, media, templates, phone numbers, calling, groups, flows,

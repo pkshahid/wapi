@@ -85,7 +85,7 @@ class _BaseClient:
         self.base_url = base_url.rstrip("/")
         self.timeout = timeout
         self.retry = RetryPolicy(max_retries=max_retries)
-        self.user_agent = user_agent or f"wapi-python/0.1 ({api_version})"
+        self.user_agent = user_agent or f"whatsapp-cloud/0.1 ({api_version})"
 
     def _headers(self) -> dict[str, str]:
         return auth_headers(self.access_token) | {"User-Agent": self.user_agent}

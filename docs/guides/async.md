@@ -4,8 +4,8 @@
 
 ```python
 import asyncio
-from wapi import AsyncClient
-from wapi.builders import Buttons
+from whatsapp_cloud import AsyncClient
+from whatsapp_cloud.builders import Buttons
 
 async def main():
     async with AsyncClient("EAAB...", phone_number_id="...", waba_id="...") as c:

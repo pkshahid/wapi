@@ -32,7 +32,7 @@ client.messages.send_reaction(to, message_id="wamid.x", emoji="👍")
 ## Interactive builders
 
 ```python
-from wapi.builders import Buttons, ListMessage, CtaUrl, FlowMessage, Product, ProductList, CatalogMessage, LocationRequest, CallPermissionRequest
+from whatsapp_cloud.builders import Buttons, ListMessage, CtaUrl, FlowMessage, Product, ProductList, CatalogMessage, LocationRequest, CallPermissionRequest
 
 # reply buttons (max 3)
 Buttons().body("Sure?").add("Yes", "y").add("No", "n")
@@ -67,7 +67,7 @@ client.messages.send_interactive(to, Buttons().body("?").add("OK", "ok"))
 ## Templates
 
 ```python
-from wapi.builders import Template, Param
+from whatsapp_cloud.builders import Template, Param
 
 client.messages.send_template(to, Template("order_conf", "en_US").body_params("Ana", "1234"))
 client.messages.send_template(to,

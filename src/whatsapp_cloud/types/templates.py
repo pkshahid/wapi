@@ -35,7 +35,7 @@ class TemplateComponent(WapiModel):
     """A HEADER / BODY / FOOTER / BUTTONS / CAROUSEL / LIMITED_TIME_OFFER component.
 
     ``example`` and format-specific keys vary widely, so this model stays
-    permissive — build components with the helpers in ``wapi.builders``.
+    permissive — build components with the helpers in ``whatsapp_cloud.builders``.
     """
 
     type: str

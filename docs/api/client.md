@@ -1,8 +1,8 @@
 # Client
 
-::: wapi.client.Client
+::: whatsapp_cloud.client.Client
     options:
       members: true
-::: wapi.client.AsyncClient
+::: whatsapp_cloud.client.AsyncClient
     options:
       members: true

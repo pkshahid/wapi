@@ -5,8 +5,8 @@ from __future__ import annotations
 from collections.abc import Sequence
 from typing import Any
 
-from wapi.http import ApiRequest, clean_body, clean_params, merge_fields
-from wapi.types.templates import Template, TemplateCreated
+from whatsapp_cloud.http import ApiRequest, clean_body, clean_params, merge_fields
+from whatsapp_cloud.types.templates import Template, TemplateCreated
 
 from .base import AsyncResource, Resource
 

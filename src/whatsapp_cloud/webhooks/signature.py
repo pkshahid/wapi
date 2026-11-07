@@ -5,7 +5,7 @@ from __future__ import annotations
 import hashlib
 import hmac
 
-from wapi.exceptions import WebhookSignatureError
+from whatsapp_cloud.exceptions import WebhookSignatureError
 
 __all__ = ["compute_signature", "verify_or_raise", "verify_signature"]
 

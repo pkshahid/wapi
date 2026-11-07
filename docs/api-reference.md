@@ -4,7 +4,7 @@ Catalog of every endpoint, method, and option exposed by the WhatsApp Business
 Platform (Cloud API + Business Management API + Flows API), verified against
 Meta's official API reference (November 2026, Graph API v21+).
 
-This document is the build spec for the `wapi` package: every resource class in
+This document is the build spec for the `whatsapp-cloud` package: every resource class in
 the plan maps to a section here.
 
 ---

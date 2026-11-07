@@ -1,5 +1,5 @@
 # Builders
 
-::: wapi.builders
+::: whatsapp_cloud.builders
     options:
       members: true

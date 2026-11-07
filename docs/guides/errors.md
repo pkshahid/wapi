@@ -3,7 +3,7 @@
 Every non-2xx response raises an `ApiError` subclass:
 
 ```python
-from wapi import ApiError, RateLimitError, ValidationError, TemplateError
+from whatsapp_cloud import ApiError, RateLimitError, ValidationError, TemplateError
 
 try:
     client.messages.send_text(to, "hi")

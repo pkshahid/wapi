@@ -6,8 +6,8 @@ from collections.abc import Sequence
 from pathlib import Path
 from typing import Any
 
-from wapi.http import ApiRequest, clean_body, clean_params, merge_fields
-from wapi.types.groups import Group, GroupCreated, JoinRequest
+from whatsapp_cloud.http import ApiRequest, clean_body, clean_params, merge_fields
+from whatsapp_cloud.types.groups import Group, GroupCreated, JoinRequest
 
 from .base import AsyncResource, Resource
 

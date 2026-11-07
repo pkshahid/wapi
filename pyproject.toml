@@ -3,13 +3,13 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "wapi"
+name = "whatsapp-cloud"
 version = "0.1.0"
 description = "Python client for the WhatsApp Business Platform (Cloud API)"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
-authors = [{ name = "wapi contributors" }]
+authors = [{ name = "whatsapp-cloud contributors" }]
 keywords = ["whatsapp", "whatsapp-business", "cloud-api", "meta", "messaging"]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -46,7 +46,7 @@ Documentation = "https://github.com/pkshahid/wapi#readme"
 Repository = "https://github.com/pkshahid/wapi"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/wapi"]
+packages = ["src/whatsapp_cloud"]
 
 [tool.ruff]
 target-version = "py310"
@@ -69,4 +69,4 @@ testpaths = ["tests"]
 addopts = "-q"
 
 [tool.coverage.run]
-source = ["src/wapi"]
+source = ["src/whatsapp_cloud"]

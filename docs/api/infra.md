@@ -1,8 +1,8 @@
 # Exceptions & HTTP
 
-::: wapi.exceptions
+::: whatsapp_cloud.exceptions
     options: {members: true, heading_level: 2}
-::: wapi.http
+::: whatsapp_cloud.http
     options: {members: true, heading_level: 2}
-::: wapi.pagination
+::: whatsapp_cloud.pagination
     options: {members: true, heading_level: 2}

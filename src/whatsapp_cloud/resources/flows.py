@@ -5,8 +5,8 @@ from __future__ import annotations
 from collections.abc import Sequence
 from typing import Any
 
-from wapi.http import ApiRequest, clean_body, clean_params, merge_fields
-from wapi.types.flows import Flow, FlowCreated, FlowMigrationResult
+from whatsapp_cloud.http import ApiRequest, clean_body, clean_params, merge_fields
+from whatsapp_cloud.types.flows import Flow, FlowCreated, FlowMigrationResult
 
 from .base import AsyncResource, Resource
 

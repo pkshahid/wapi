@@ -12,7 +12,7 @@
 | `base_url` | `https://graph.facebook.com` | Override for proxies/testing |
 | `timeout` | `30.0` | Seconds (httpx) |
 | `max_retries` | `3` | Automatic retries on rate limits & 5xx |
-| `user_agent` | `wapi-python/…` | Sent on every request |
+| `user_agent` | `whatsapp-cloud-python/…` | Sent on every request |
 | `http_client` | `None` | Bring your own `httpx.Client` / `AsyncClient` |
 
 ## Retries

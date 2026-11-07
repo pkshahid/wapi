@@ -1,4 +1,4 @@
-"""Typed webhook events produced by :func:`wapi.webhooks.parse`.
+"""Typed webhook events produced by :func:`whatsapp_cloud.webhooks.parse`.
 
 Every event carries the ``field`` that produced it, the WABA ``id`` (entry id),
 and the raw ``value`` dict. Subclasses add typed accessors for known fields.
@@ -17,7 +17,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any
 
-from wapi.types.webhooks import (
+from whatsapp_cloud.types.webhooks import (
     InboundMessage,
     MessageStatus,
     StatusError,
@@ -225,4 +225,4 @@ class GroupMessage(WebhookEvent):
 
 @dataclass
 class UnknownEvent(WebhookEvent):
-    """Fallback for fields wapi doesn't model yet — ``value`` stays raw."""
+    """Fallback for fields whatsapp_cloud doesn't model yet — ``value`` stays raw."""

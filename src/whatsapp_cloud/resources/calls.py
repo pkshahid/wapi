@@ -4,8 +4,8 @@ from __future__ import annotations
 
 from typing import Any
 
-from wapi.http import ApiRequest, clean_body, clean_params
-from wapi.types.calls import CallPermission, CallResult
+from whatsapp_cloud.http import ApiRequest, clean_body, clean_params
+from whatsapp_cloud.types.calls import CallPermission, CallResult
 
 from .base import AsyncResource, Resource
 

@@ -1,4 +1,4 @@
-# `wapi` — WhatsApp Business Platform Python Client: Build Plan
+# `whatsapp-cloud` — WhatsApp Business Platform Python Client: Build Plan
 
 A complete, well-organized, easy-to-use Python package covering the entire
 WhatsApp Business Platform. `docs/api-reference.md` is the endpoint spec; this
@@ -36,12 +36,12 @@ document is the architecture and delivery plan.
 | Versioning | SemVer; `API_VERSION` default `"v25.0"` pinned, user-overridable |
 
 No framework dependencies. Optional extras:
-`wapi[fastapi]` (webhook router), `wapi[flask]` later if wanted.
+`whatsapp-cloud[fastapi]` (webhook router), `whatsapp-cloud[flask]` later if wanted.
 
 ## 3. Package layout
 
 ```
-wapi/
+whatsapp-cloud/
 ├── __init__.py            # Client, AsyncClient, __version__
 ├── client.py              # Client / AsyncClient config + resource wiring
 ├── http.py                # transport: request, retry/backoff, rate-limit, download
@@ -102,8 +102,8 @@ same dicts.
 ## 4. Public API sketch
 
 ```python
-from wapi import Client
-from wapi.builders import Buttons, ListMessage, TemplateMessage
+from whatsapp_cloud import Client
+from whatsapp_cloud.builders import Buttons, ListMessage, TemplateMessage
 
 client = Client(
     access_token="EAAB...",
@@ -150,7 +150,7 @@ client.groups.invite_link.create(group.id)
 client.flows.publish(flow_id)
 
 # --- webhooks ---
-from wapi.webhooks import verify_signature, parse_event
+from whatsapp_cloud.webhooks import verify_signature, parse_event
 verify_signature(raw_body, headers["X-Hub-Signature-256"], app_secret)
 for event in parse_event(payload):
     match event:                               # typed union
@@ -217,7 +217,7 @@ docstrings, and a runnable `examples/` script.
 
 ## 8. Decisions
 
-- **Name**: `wapi` (verify PyPI availability at publish time; fallback `wabapi`).
+- **Name**: `whatsapp-cloud` (verify PyPI availability at publish time; fallback `wabapi`).
 - **v1 scope — core first**: messages (+ marketing), media, templates, phone
   numbers, profile/QR/block/commerce/automation/encryption, calling, groups,
   flows, webhooks. Partner/admin tier (business portfolio, app solutions,
@@ -225,7 +225,7 @@ docstrings, and a runnable `examples/` script.
   — the `resources/` layout already reserves `business.py`, `app.py`,
   `users.py` for it.
 - **Webhooks**: signature verification + typed parser **plus** an optional
-  FastAPI router under `wapi[fastapi]` that auto-verifies and dispatches.
+  FastAPI router under `whatsapp-cloud[fastapi]` that auto-verifies and dispatches.
 - **Python**: 3.10+.
 - **Excluded**: On-Premises API (deprecated by Meta), Embedded Signup frontend
   JS (documented, not implemented), Payments order APIs beyond sending the

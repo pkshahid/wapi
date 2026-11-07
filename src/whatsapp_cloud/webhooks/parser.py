@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 from typing import Any
 
-from wapi.types.webhooks import (
+from whatsapp_cloud.types.webhooks import (
     InboundMessage,
     MessageStatus,
     WebhookContact,

@@ -5,8 +5,8 @@ from __future__ import annotations
 from collections.abc import Sequence
 from typing import Any, Literal
 
-from wapi.http import ApiRequest, clean_body, clean_params, merge_fields
-from wapi.types.phone_numbers import PhoneNumber, PhoneNumberInfo
+from whatsapp_cloud.http import ApiRequest, clean_body, clean_params, merge_fields
+from whatsapp_cloud.types.phone_numbers import PhoneNumber, PhoneNumberInfo
 
 from .base import AsyncResource, Resource
 

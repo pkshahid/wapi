@@ -1,5 +1,5 @@
 # Types
 
-::: wapi.types
+::: whatsapp_cloud.types
     options:
       members: true
