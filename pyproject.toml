@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Python client for the WhatsApp Business Platform (Cloud API)"
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
+license = "MIT"
 authors = [{ name = "wapi contributors" }]
 keywords = ["whatsapp", "whatsapp-business", "cloud-api", "meta", "messaging"]
 classifiers = [
@@ -36,11 +36,14 @@ dev = [
     "mypy>=1.10",
     "mkdocs-material>=9.5",
     "mkdocstrings[python]>=0.26",
+    "build>=1.2",
+    "twine>=5",
 ]
 
 [project.urls]
-Homepage = "https://github.com/wapi-py/wapi"
-Documentation = "https://github.com/wapi-py/wapi#readme"
+Homepage = "https://github.com/pkshahid/wapi"
+Documentation = "https://github.com/pkshahid/wapi#readme"
+Repository = "https://github.com/pkshahid/wapi"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/wapi"]
